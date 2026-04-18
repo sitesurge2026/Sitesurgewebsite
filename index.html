@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SiteSurge | Website Design and SEO for Professional Services</title>
+  <title>SiteSurge | Turning Searches into Sales</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
   <header class="header">
     <div class="container header-inner">
       <a href="#" class="logo">Site<em>Surge</em></a>
       <nav class="nav">
-        <a href="#services">Services</a>
+        <a href="#pipeline">The Pipeline</a>
+        <a href="#proof">Our Results</a>
         <a href="#pricing">Pricing</a>
-        <a href="#contact" class="btn btn-nav">Get Started</a>
+        <a href="#audit" class="btn btn-nav">Free Audit</a>
       </nav>
       <button class="menu-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -25,366 +24,197 @@
   </header>
 
   <main>
-    <!-- Hero (Xtract-style: headline, subline, dual CTAs, trust line) -->
+    <!-- 1. The Hero Section -->
     <section class="hero">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-inner">
         <div class="hero-content">
-          <h1><span class="hero-title-accent"><span class="hero-title-green">Dignified</span> Design. Data-Driven <span
-                class="hero-title-green">Growth</span>.</span></h1>
-          <p class="hero-desc">SiteSurge brings professional web design and SEO to your fingertips — so you can attract
-            the right clients without the wrong tactics.</p>
-          <div class="hero-cta hero-cta-dual">
-            <a href="#contact" class="btn btn-hero">Get in touch</a>
-            <a href="#services" class="btn btn-hero-outline">View services</a>
+          <h1>I connect Google Search to your business and turn those visitors into <span class="hero-title-accent"><span class="hero-title-green">genuine quote requests.</span></span></h1>
+          <p class="hero-desc">A 30-day system for service businesses to get found, get trusted, and get hired.</p>
+          <div class="hero-cta">
+            <a href="#audit" class="btn btn-hero">Get Your Free Digital Health Check</a>
           </div>
           <p class="hero-trust">Trusted by 60+ professional practices</p>
         </div>
       </div>
     </section>
 
-    <!-- Our Services (Xtract-style: section heading + service cards) -->
-    <section class="services-section scroll-animate" id="services">
+    <!-- 2. The Status Quo Section (The Pain) -->
+    <section class="pain-section scroll-animate" id="pipeline">
+       <div class="container">
+          <div class="pain-grid">
+             <div class="pain-card">
+                <div class="pain-icon">⚠️</div>
+                <h3>The Invisible Business</h3>
+                <p>If you aren't on page one, you're giving your leads directly to your competitors.</p>
+             </div>
+             <div class="pain-card">
+                <div class="pain-icon">💧</div>
+                <h3>The Leaky Bucket</h3>
+                <p>If your website is slow or confusing, you're paying for clicks that never call you.</p>
+             </div>
+          </div>
+       </div>
+    </section>
+
+    <!-- 3. The 3-Step Pipeline Visual -->
+    <section class="pipeline-section scroll-animate">
       <div class="container">
-        <h2 class="section-heading-lg">Web & SEO Solutions That Take Your Practice to the Next Level</h2>
-        <p class="section-lead">We design, build, and optimise websites that help you work smarter — with compliance and
-          dignity built in.</p>
-        <div class="services-grid">
-          <div class="service-card">
-            <h3>Bespoke Web Design</h3>
-            <p>Custom sites that reflect your firm's expertise. No generic templates — we create a unique look and
-              structure that fits lawyers, accountants, dental practices, and surveyors.</p>
-            <ul class="service-tags">
-              <li>Responsive</li>
-              <li>Compliance-ready</li>
-              <li>Fast & secure</li>
-            </ul>
+        <h2 class="section-heading-lg text-center">The 3-Step Growth Pipeline</h2>
+        <div class="pipeline-steps">
+          <div class="pipeline-step">
+            <div class="step-icon">1</div>
+            <h4>The Connection (Google)</h4>
+            <p>Fixing your map listing and technical SEO to guarantee visibility.</p>
           </div>
-          <div class="service-card">
-            <h3>SEO & Visibility</h3>
-            <p>Get found when clients search for experts in your area. We optimise your content and technical setup so
-              you rank for the terms that matter — without gimmicks.</p>
-            <ul class="service-tags">
-              <li>Local SEO</li>
-              <li>Authority building</li>
-              <li>Ongoing support</li>
-            </ul>
+          <div class="pipeline-step">
+            <div class="step-icon">2</div>
+            <h4>The Destination (Website)</h4>
+            <p>Building a lightning-fast, mobile-optimized digital storefront.</p>
           </div>
-          <div class="service-card">
-            <h3>Compliance-First Content</h3>
-            <p>Copy and imagery that meet your industry's rules. We work with you to ensure every word and image aligns
-              with regulatory standards and your reputation.</p>
-            <ul class="service-tags">
-              <li>Regulation check</li>
-              <li>Clear messaging</li>
-              <li>Client journeys</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <h3>Hosting & Care</h3>
-            <p>Lightning-fast, eco-friendly hosting with transparent pricing. We handle updates, security, and
-              performance so your site runs 24/7 without the hassle.</p>
-            <ul class="service-tags">
-              <li>Eco-friendly</li>
-              <li>No downtime</li>
-              <li>Unlimited bandwidth</li>
-            </ul>
+          <div class="pipeline-step">
+            <div class="step-icon">3</div>
+            <h4>The Conversion (Enquiry)</h4>
+            <p>Strategic CTA buttons and frictionless forms to maximize lead capture.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- We service (who we work with) -->
-    <section class="services-intro services-benefits scroll-animate">
-      <div class="container">
-        <h2 class="services-benefits-heading">We work with:</h2>
-        <p class="services-benefits-lead">We design and optimise websites for regulated, reputation-sensitive
-          professions. Every project is built with compliance in mind and a focus on bringing in the right kind of
-          clients.</p>
-        <ul class="services-we-service-list">
-          <li><strong>Lawyers & law firms</strong> — Solicitors, barristers, and legal practices that need a credible
-            online presence and clear pathways for client enquiries.</li>
-          <li><strong>Accountants & tax advisers</strong> — Firms that want a professional site that reflects their
-            expertise and supports trust with existing and prospective clients.</li>
-          <li><strong>Dental practices</strong> — Surgeries and clinics looking for a modern, reassuring website that
-            explains services and makes booking or contact simple.</li>
-          <li><strong>Surveyors</strong> — Chartered surveyors, valuers, and property consultants who need a site that
-            showcases their specialisms and local knowledge.</li>
-        </ul>
-      </div>
+    <!-- 4. Radical Proof Section -->
+    <section class="proof-section scroll-animate" id="proof">
+       <div class="container">
+          <h2 class="section-heading-lg text-center">The Receipts</h2>
+          <div class="proof-grid">
+             <div class="proof-card speed-proof">
+                <h4>Before/After Speed Test</h4>
+                <div class="speed-visuals">
+                   <div class="speed-circle poor"><span>24</span> <small>Before</small></div>
+                   <div class="arrow">→</div>
+                   <div class="speed-circle excellent"><span>99</span> <small>After</small></div>
+                </div>
+                <p>We eliminate 'The Leaky Bucket' by delivering lightning fast load times.</p>
+             </div>
+             
+             <div class="proof-card local-proof" style="background-image: url('assets/local_seo_grid_bg.png'); background-size: cover; background-position: center;">
+                <div class="glass-overlay">
+                  <h4>The Local Dominance Grid</h4>
+                  <div class="grid-stats">
+                    <span class="rank-badge rank-1">1</span>
+                    <span class="rank-badge rank-2">2</span>
+                    <span class="rank-badge rank-3">3</span>
+                  </div>
+                  <p>Ranking you exactly where it matters: in your city, for your services.</p>
+                </div>
+             </div>
+          </div>
+          
+          <div class="testimonials">
+            <h3 class="text-center testimonial-heading">What Clients Say</h3>
+            <div class="testimonial-grid">
+              <div class="testimonial-card box-shadow-glow">
+                <p>"Rizwan built us a digital machine. Since launching the new site our inbound inquiries have skyrocketed and our sales team is finally getting the qualified leads they need. Absolutely insane ROI."</p>
+                <strong>— CEO, B2B Service Agency</strong>
+              </div>
+              <div class="testimonial-card box-shadow-glow">
+                <p>"We had a slow, clunky site and were invisible on Google. In just 30 days he got us ranking #1 on maps and the new storefront looks flawless. The phone hasn't stopped ringing."</p>
+                <strong>— Owner, Professional Practice</strong>
+              </div>
+            </div>
+          </div>
+       </div>
     </section>
 
-    <!-- Our Process – The SiteSurge Approach (Xtract-style steps) -->
-    <section class="approach-section scroll-animate" id="approach">
-      <div class="container">
-        <h2 class="section-heading-lg">Our Simple, Smart Process</h2>
-        <p class="section-lead">We don't just build websites; we build digital storefronts that reflect your expertise
-          and win the right clients.</p>
-        <div class="approach-flow">
-          <div class="approach-step">
-            <span class="approach-step-num">1</span>
-            <div class="approach-step-content">
-              <h4>Compliance-First Strategy</h4>
-              <p>We consult with you to ensure every word and image aligns with your industry's regulatory standards.
-              </p>
-            </div>
-          </div>
-          <div class="approach-step">
-            <span class="approach-step-num">2</span>
-            <div class="approach-step-content">
-              <h4>Bespoke Visual Identity</h4>
-              <p>No generic themes. We pull inspiration from your firm's heritage and values to create a unique colour
-                palette and layout.</p>
-            </div>
-          </div>
-          <div class="approach-step">
-            <span class="approach-step-num">3</span>
-            <div class="approach-step-content">
-              <h4>Data-Driven Value</h4>
-              <p>Since you can't always "show" a service, we use infographics, success metrics, and client journeys to
-                make your impact felt.</p>
-            </div>
-          </div>
-          <div class="approach-step">
-            <span class="approach-step-num">4</span>
-            <div class="approach-step-content">
-              <h4>Authority on Google</h4>
-              <p>We build with a clean technical structure so that when clients search for an expert, they find you
-                first.</p>
-            </div>
-          </div>
+    <!-- 5. Anti-Scam Transparency Section -->
+    <section class="transparency-section scroll-animate">
+      <div class="container text-center">
+        <h2 class="section-heading-lg">The "Anti-Scam" Guarantee</h2>
+        <p class="section-lead">The UK market is sick of empty promises. Here is what I <strong>refuse</strong> to do:</p>
+        <div class="transparency-list">
+           <div class="transparency-item">❌ I don't use AI-generated 'slop' content.</div>
+           <div class="transparency-item">❌ I don't trap you in 12-month contracts.</div>
+           <div class="transparency-item">❌ I don't hide behind jargon. I provide a monthly report that shows one thing: how many people clicked 'Request a Quote'.</div>
         </div>
       </div>
     </section>
 
-
-
-    <!-- Benefits (Xtract-style key benefits grid) -->
-    <section class="benefits-section scroll-animate">
-      <div class="container">
-        <h2 class="section-heading-lg">The Key Benefits of a Professional Website</h2>
-        <p class="section-lead">Discover how the right site enhances trust, brings in enquiries, and supports growth —
-          without compromising your reputation.</p>
-        <div class="benefits-grid">
-          <div class="benefit-card">
-            <span class="benefit-icon">◆</span>
-            <h3>Dignified Presence</h3>
-            <p>A site that reflects your expertise and values. No pushy sales language — just clear, professional
-              messaging that builds trust.</p>
-          </div>
-          <div class="benefit-card">
-            <span class="benefit-icon">◆</span>
-            <h3>More of the Right Enquiries</h3>
-            <p>Attract clients who are already looking for your services. We optimise for the terms that matter in your
-              sector and location.</p>
-          </div>
-          <div class="benefit-card">
-            <span class="benefit-icon">◆</span>
-            <h3>Visibility on Google</h3>
-            <p>Clean structure and targeted content help you rank when people search for experts like you. We focus on
-              sustainable SEO, not shortcuts.</p>
-          </div>
-          <div class="benefit-card">
-            <span class="benefit-icon">◆</span>
-            <h3>Compliance & Peace of Mind</h3>
-            <p>Content and design that align with your industry's regulations. We check the details so you can focus on
-              your practice.</p>
-          </div>
-          <div class="benefit-card">
-            <span class="benefit-icon">◆</span>
-            <h3>Fast, Reliable Hosting</h3>
-            <p>Your site stays up, loads quickly, and is secure. We handle updates and maintenance so you don't have to.
-            </p>
-          </div>
-          <div class="benefit-card">
-            <span class="benefit-icon">◆</span>
-            <h3>Real-Time Collaboration</h3>
-            <p>See your site take shape as we build. Unlimited revisions within the project timeline so the result is
-              exactly what you need.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing (Xtract-style: 3 cards) -->
+    <!-- 6. Pricing Anchor -->
     <section class="pricing-section scroll-animate" id="pricing">
       <div class="container">
-        <h2 class="section-heading-lg">Professional Web Design at the Right Price</h2>
-        <p class="section-lead">Choose a package that fits your practice and start attracting more of the right clients.
-        </p>
-        <div class="faq-list pricing-dropdowns">
-          <details class="faq-item">
-            <summary>SEO</summary>
-            <div style="padding-top: 1.5rem;">
-              <div class="pricing-cards" style="grid-template-columns: 1fr;">
-                <div class="pricing-card">
-                  <h3>SEO</h3>
-                  <p class="pricing-amount">£200 <span style="font-size:1rem;color:var(--text-muted)">/month</span></p>
-                  <p class="pricing-desc">Ongoing SEO optimisation to boost your visibility.</p>
-                  <a href="#contact" class="btn btn-pricing">Get started</a>
-                </div>
-              </div>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>Website Design</summary>
-            <div style="padding-top: 1.5rem;">
-              <div class="pricing-cards" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                <div class="pricing-card">
-                  <h3>Single-page Site</h3>
-                  <p class="pricing-amount">£500</p>
-                  <p class="pricing-desc">Perfect for solo practitioners and new firms who need a strong, single-page presence.</p>
-                  <a href="#contact" class="btn btn-pricing">Get started</a>
-                </div>
-                <div class="pricing-card pricing-card-featured">
-                  <span class="pricing-badge">Popular</span>
-                  <h3>Multi-page Bespoke Site</h3>
-                  <p class="pricing-amount">£1,500</p>
-                  <p class="pricing-desc">For established practices looking to lead with a full multi-page, bespoke website.</p>
-                  <a href="#contact" class="btn btn-pricing btn-pricing-featured">Get started</a>
-                </div>
-              </div>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>Website Hosting and Management</summary>
-            <div style="padding-top: 1.5rem;">
-              <div class="pricing-cards" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                <div class="pricing-card">
-                  <h3>Basic</h3>
-                  <p class="pricing-amount">£50 <span style="font-size:1rem;color:var(--text-muted)">/month</span></p>
-                  <p class="pricing-desc">Fast, eco‑friendly hosting with essential maintenance.</p>
-                  <a href="#contact" class="btn btn-pricing">Get started</a>
-                </div>
-                <div class="pricing-card pricing-card-featured">
-                  <h3>Advanced</h3>
-                  <p class="pricing-amount">£100 - £200 <span style="font-size:1rem;color:var(--text-muted)">/month</span></p>
-                  <p class="pricing-desc">Hosting plus regular updates and content changes.</p>
-                  <a href="#contact" class="btn btn-pricing btn-pricing-featured">Get started</a>
-                </div>
-              </div>
-            </div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials (Xtract-style) -->
-    <section class="testimonials-section scroll-animate">
-      <div class="container">
-        <h2 class="section-heading-lg">Why Practices Choose SiteSurge</h2>
-        <p class="section-lead">Professional services firms trust us to build sites that reflect their expertise and win
-          the right clients.</p>
-        <div class="testimonial-grid">
-          <div class="testimonial-card">
-            <p class="testimonial-quote">"Our new site looks professional and has brought in more serious enquiries. No
-              flashy tactics — just a clear, credible presence that fits our firm."</p>
-            <p class="testimonial-author">Practice Manager, Legal</p>
+        <h2 class="section-heading-lg text-center">Transparent Pricing Packages</h2>
+        <div class="pricing-cards">
+          <div class="pricing-card">
+            <h3>Visibility Roadmap</h3>
+            <p class="pricing-amount">£200</p>
+            <p class="pricing-desc">A deep-dive research map showing exactly how to beat your competitors. Low barrier, high value.</p>
+            <ul class="pricing-features">
+              <li>Comprehensive SEO Audit</li>
+              <li>Keyword Opportunity Mapping</li>
+              <li>Step-by-step Execution Plan</li>
+            </ul>
+            <a href="#audit" class="btn btn-pricing">Get Started</a>
           </div>
-          <div class="testimonial-card">
-            <p class="testimonial-quote">"We wanted a website that didn't feel like a template. SiteSurge delivered
-              something that actually reflects who we are and what we do."</p>
-            <p class="testimonial-author">Partner, Accountancy Firm</p>
+
+          <div class="pricing-card">
+            <h3>Digital Storefront</h3>
+            <p class="pricing-amount">£800 - £1,500</p>
+            <p class="pricing-desc">A one-time build for the business that just needs a site that looks good and works fast.</p>
+             <ul class="pricing-features">
+              <li>High-converting 1-5 Page Build</li>
+              <li>Mobile-Optimized Design</li>
+              <li>Optional £50-£150/mo Caretaker (Hosting & Edits)</li>
+            </ul>
+            <a href="#audit" class="btn btn-pricing">Get Started</a>
           </div>
-          <div class="testimonial-card">
-            <p class="testimonial-quote">"Visibility on Google has improved, and we're getting more enquiries from
-              people who are already looking for our services. Exactly what we needed."</p>
-            <p class="testimonial-author">Dental Practice Owner</p>
+
+          <div class="pricing-card pricing-card-featured">
+            <span class="pricing-badge">The Best ROI</span>
+            <h3>The Lead Machine</h3>
+            <p class="pricing-amount">£1,500 <span class="small-text">+ £400/mo</span></p>
+            <p class="pricing-desc">High-performance build PLUS aggressive growth. Active SEO management to outrank competitors.</p>
+             <ul class="pricing-features">
+              <li>Everything in Digital Storefront</li>
+              <li>Active SEO Monitoring & Tweaks</li>
+              <li>Monthly ROI Reporting</li>
+            </ul>
+            <a href="#audit" class="btn btn-pricing btn-pricing-featured">Dominate Now</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQs (Xtract-style accordion) -->
-    <section class="faqs-section scroll-animate">
-      <div class="container">
-        <h2 class="section-heading-lg">We've Got the Answers You're Looking For</h2>
-        <p class="section-lead">Quick answers to common questions about our web design and SEO for professional
-          services.</p>
-        <div class="faq-list">
-          <details class="faq-item">
-            <summary>How long does a typical website project take?</summary>
-            <p>Single-page sites often go live within 4–6 weeks. Multi-page bespoke projects usually take 8–12 weeks,
-              depending on scope and content. We'll give you a clear timeline at the start.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Do you work with regulated professions?</summary>
-            <p>Yes. We specialise in lawyers, accountants, dental practices, and surveyors. We build compliance checks
-              into every project so your content and design meet your industry's standards.</p>
-          </details>
-          <details class="faq-item">
-            <summary>What's included in hosting and maintenance?</summary>
-            <p>We provide fast, eco-friendly hosting with transparent pricing. We handle updates, security, and
-              performance monitoring so your site stays secure and quick. No hidden fees.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Can you help with our existing website?</summary>
-            <p>Yes. We can redesign, rebuild, or optimise an existing site. We'll assess what you have and recommend the
-              best path — whether that's a refresh or a full rebuild.</p>
-          </details>
-          <details class="faq-item">
-            <summary>How does SEO work for professional services?</summary>
-            <p>We focus on local and authority SEO: the right keywords, clean technical setup, and content that answers
-              what your clients search for. We avoid shortcuts and build for long-term visibility.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- Final CTA (Xtract-style) -->
-    <section class="cta-section scroll-animate" id="contact">
-      <div class="container" style="max-width: 600px; margin: 0 auto; text-align: left;">
-        <h2 class="cta-heading" style="text-align: center;">Let Your Website Work for You</h2>
-        <p class="cta-desc" style="text-align: center;">Get in touch today and start attracting more of the right clients — with dignity and data on your side.</p>
-        
-        <form action="https://formsubmit.co/info@sitesurge.co.uk" method="POST" class="contact-form">
-          <input type="hidden" name="_subject" value="New enquiry from SiteSurge website">
-          <input type="hidden" name="_captcha" value="false"> <!-- Disables robot check for visitors -->
-          <input type="hidden" name="_next" value="https://sitesurge2026.github.io/Sitesurgewebsite/"> <!-- Seamless return to the site if active -->
-          
-          <div style="margin-bottom: 1rem;">
-            <label for="name" style="display:block; margin-bottom:0.5rem; color:var(--text-muted);">Name</label>
-            <input type="text" id="name" name="name" required style="width: 100%; padding: 0.85rem 1.25rem; border-radius: 50px; border: 1px solid var(--border-light); background: var(--bg-card); color: var(--text);">
-          </div>
-          
-          <div style="margin-bottom: 1rem;">
-            <label for="email" style="display:block; margin-bottom:0.5rem; color:var(--text-muted);">Email</label>
-            <input type="email" id="email" name="email" required style="width: 100%; padding: 0.85rem 1.25rem; border-radius: 50px; border: 1px solid var(--border-light); background: var(--bg-card); color: var(--text);">
-          </div>
-          
-          <div style="margin-bottom: 1rem;">
-            <label for="service" style="display:block; margin-bottom:0.5rem; color:var(--text-muted);">Service of Interest</label>
-            <select id="service" name="service" style="width: 100%; padding: 0.85rem 1.25rem; border-radius: 50px; border: 1px solid var(--border-light); background: var(--bg-card); color: var(--text); appearance: none;">
-              <option value="Website Design">Website Design</option>
-              <option value="SEO">SEO</option>
-              <option value="Hosting & Management">Hosting & Management</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-          
-          <div style="margin-bottom: 1.5rem;">
-            <label for="message" style="display:block; margin-bottom:0.5rem; color:var(--text-muted);">Message</label>
-            <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 1.25rem; border-radius: 24px; border: 1px solid var(--border-light); background: var(--bg-card); color: var(--text); resize: vertical;"></textarea>
-          </div>
-          
-          <button type="submit" class="btn btn-hero" style="width: 100%;">Send Message</button>
+    <!-- 7. The Loom Lead Magnet -->
+    <section class="loom-section scroll-animate" id="audit">
+      <div class="container text-center loom-container">
+        <h2 class="section-heading-lg">Want to see your own pipeline?</h2>
+        <p class="section-lead">Enter your URL and I’ll send you a 2-minute video showing exactly where your website is leaking leads. No obligation, just a look under the hood.</p>
+        <form action="https://formsubmit.co/info@sitesurge.co.uk" method="POST" class="loom-form">
+           <input type="hidden" name="_subject" value="New Loom Audit Request">
+           <input type="hidden" name="_captcha" value="false">
+           
+           <div class="form-row">
+             <input type="url" name="website_url" placeholder="Your Website URL (e.g. https://yoursite.com)" required class="form-input">
+           </div>
+           <div class="form-row">
+             <input type="email" name="email" placeholder="Your Best Email" required class="form-input">
+           </div>
+           <button type="submit" class="btn btn-hero w-100">Send My Free Digital Health Check</button>
         </form>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="#" class="logo">Site<em>Surge</em></a>
-        <p>Website Design and SEO for Professional Services.</p>
+        <p>Turning Searches into Sales for Service Businesses.</p>
       </div>
       <div class="footer-links">
-        <a href="#services">Services</a>
+        <a href="#pipeline">The Pipeline</a>
+        <a href="#proof">Our Results</a>
         <a href="#pricing">Pricing</a>
-        <a href="#contact">Get Started</a>
       </div>
       <p class="footer-small">© SiteSurge. All rights reserved.</p>
     </div>
@@ -392,5 +222,4 @@
 
   <script src="script.js"></script>
 </body>
-
 </html>
