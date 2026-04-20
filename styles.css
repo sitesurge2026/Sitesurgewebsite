@@ -1,29 +1,28 @@
-/* SiteSurge – Dark + Dark Green Theme */
-
+/* SiteSurge – Agency Aesthetic Theme (Made by Shape inspired) */
 @font-face {
-  font-family: 'Figtree';
-  src: url('assets/fonts/Figtree-Light.ttf') format('truetype');
-  font-weight: 300;
+  font-family: 'Oldschool Grotesk';
+  src: url('../fonts/OldschoolGrotesk_W-Regular.eot');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --bg: #000000;
-  --bg-elevated: #0a0a0a;
-  --bg-section: #121212;
-  --bg-card: #0f0f0f;
-  --bg-card-alt: #0d1117;
-  --green: #00e676;
-  --green-light: #5eff8c;
-  --green-glow: rgba(0, 230, 118, 0.45);
-  --green-glow-strong: rgba(0, 255, 140, 0.25);
-  --text: #f0f0f0;
-  --text-muted: #9ca3af;
-  --hero-lead: #4b5563;
-  --border: #1f1f1f;
-  --border-light: #2d2d2d;
-  --white: #ffffff;
+  --bg: #0A0A0A;
+  --bg-elevated: #111111;
+  --bg-section: #111111;
+  --bg-card: #151515;
+  --bg-card-alt: #1a1a1a;
+  --green: #39FF14;
+  --green-light: #39FF14;
+  --green-glow: rgba(57, 255, 20, 0.45);
+  --green-glow-strong: rgba(57, 255, 20, 0.25);
+  --text: #F0F0F0;
+  --text-muted: #A3A3A3;
+  --hero-lead: #888888;
+  --border: #222222;
+  --border-light: #333333;
+  --white: #FFFFFF;
 }
 
 *,
@@ -50,12 +49,120 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Figtree', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: 800;
+  font-family: 'Oldschool Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oldschool Grotesk', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  margin-top: 0;
+}
+
+/* Premium Text Gradient */
+.text-gradient {
+  background: linear-gradient(135deg, var(--white) 0%, var(--green) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Cinematic Grain Overlay */
+.noise-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Ambient Orbiting Background Elements */
+.ambient-orb {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--green);
+  opacity: 0.15;
+  filter: blur(120px);
+  z-index: 0;
+  pointer-events: none;
+  animation: floatOrb 15s infinite ease-in-out alternate;
+}
+
+@keyframes floatOrb {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, -50px) scale(1.2); opacity: 0.25; }
+  100% { transform: translate(-30px, 30px) scale(0.9); opacity: 0.15; }
+}
+
+/* Hover Physics for Cards (Glassmorphism) */
+.hover-card {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease, border-color 0.4s ease;
+  position: relative;
+  z-index: 1;
+  background: rgba(26, 26, 26, 0.4) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.04) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.hover-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.5), 0 0 40px rgba(57, 255, 20, 0.08);
+  border-color: rgba(57, 255, 20, 0.2) !important;
+  border-top-color: rgba(57, 255, 20, 0.5) !important;
+}
+
+/* Premium Data Sieve Animations */
+.sieve-orb {
+  position: absolute;
+  width: 8px; height: 8px;
+  background: var(--green);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--green);
+  opacity: 0;
+}
+
+.sieve-drop-1 { animation: sieveFall1 3s infinite ease-in; left: 50%; top: -10px; margin-left: -4px; }
+.sieve-drop-2 { animation: sieveFall2 3.5s infinite ease-in 1s; left: 50%; top: -10px; margin-left: -4px; }
+.sieve-drop-3 { animation: sieveFall3 2.5s infinite ease-in 2s; left: 50%; top: -10px; margin-left: -4px; }
+
+@keyframes sieveFall1 {
+  0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: 1; }
+  60% { transform: translate(0, 45px); opacity: 1; }
+  80% { transform: translate(-30px, 60px); opacity: 0; box-shadow: 0 0 20px var(--green); }
+  100% { opacity: 0; }
+}
+
+@keyframes sieveFall2 {
+  0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: 1; }
+  50% { transform: translate(0, 35px); opacity: 1; }
+  70% { transform: translate(30px, 50px); opacity: 0; box-shadow: 0 0 20px var(--green); }
+  100% { opacity: 0; }
+}
+
+@keyframes sieveFall3 {
+  0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: 1; }
+  80% { transform: translate(0, 70px) scale(0); opacity: 0; }
+  100% { opacity: 0; }
 }
 
 .container {
@@ -123,7 +230,7 @@ a:hover {
 
 .nav a {
   color: var(--text-muted);
-  font-weight: 800;
+  font-weight: normal;
 }
 
 .nav a:hover {
@@ -137,9 +244,9 @@ a:hover {
   padding: 0.6rem 1.25rem;
   font-weight: 800;
   font-size: 0.9rem;
-  border-radius: 12px;
+  border-radius: 100px;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s, border-color 0.2s;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, border-color 0.2s, transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: none;
   font-family: inherit;
 }
